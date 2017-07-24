@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhanglin.filterimageview.MainActivity">
+
+    <com.zhanglin.filterimageview.FilterImageView
+        android:id="@+id/fivClick"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test" />
+
+    <Button
+        android:id="@+id/btnEnableGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="允许点击加蒙层"
+
+        app:layout_constraintStart_toEndOf="@id/fivClick" />
+
+    <Button
+        android:id="@+id/btnRemoveColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黑白图片"
+        app:layout_constraintStart_toEndOf="@id/btnEnableGray" />
+</android.support.constraint.ConstraintLayout>
